@@ -1,6 +1,10 @@
+import MujSkvelyBlog from "./components/MujSkvelyBlog";
+import Pozdrav from "./components/Pozdrav";
+
 function App() {
   return (
-    <h1>Hello world</h1>
+    // <Pozdrav name={"Jirka"} />
+    <MujSkvelyBlog />
   );
 }
 
