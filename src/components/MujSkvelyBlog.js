@@ -1,5 +1,6 @@
 import React from 'react'
 import useFetch from './hooks/useFetch'
+import {Link} from 'react-router-dom'
 
 function MujSkvelyBlog() {
 
@@ -12,7 +13,7 @@ function MujSkvelyBlog() {
       <section>
         {prispevky.map(({id, title, userId, body}) =>
           <div key={id}>
-            <h2>{title}</h2>
+            <h2><Link to={`${id}`}>{title}</Link></h2>
             <small>autor  - {userId}</small>
             <p>{body}</p>
             <hr />
